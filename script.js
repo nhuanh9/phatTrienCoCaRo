@@ -88,7 +88,7 @@ function gameBoard(rows, cols, elementId) {
             if (y + k > 0 && y + k < this.cols) {
                 if (this.cells[x][y + k].value === str) {
                     count++;
-                } else if (count < 3) {
+                } else if (count < 5) {
                     count = 0;
                 }
             }
@@ -106,7 +106,7 @@ function gameBoard(rows, cols, elementId) {
             if (x + k > 0 && x + k < this.rows) {
                 if (this.cells[x+k][y].value === str) {
                     count++;
-                } else if (count < 3) {
+                } else if (count < 5) {
                     count = 0;
                 }
             }
@@ -124,7 +124,7 @@ function gameBoard(rows, cols, elementId) {
             if (y + k >= 0 && y + k < this.cols && x + k >= 0 && x + k < this.rows) {
                 if (this.cells[x+k][y + k].value === str) {
                     count++;
-                } else if (count < 3) {
+                } else if (count < 5) {
                     count = 0;
                 }
             }
@@ -142,7 +142,7 @@ function gameBoard(rows, cols, elementId) {
             if (y + k >= 0 && y + k < this.cols && x + j >= 0 && x + j < this.rows) {
                 if (this.cells[x+j][y + k].value === str) {
                     count++;
-                } else if (count < 3) {
+                } else if (count < 5) {
                     count = 0;
                 }
             }
